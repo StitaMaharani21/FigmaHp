@@ -97,3 +97,88 @@
     max-width: 700px;
 
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-text p {
+    max-width: 510px;
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 kolom */
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-grid img {
+    max-width: 80px;
+}
+
+.logo-grid img:hover {
+    transform: scale(1.1); /* Logo sedikit membesar saat dihover */
+}
+
+
+.card-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card {
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.card p {
+    font-size: 15px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.container-btn {
+    background-color: #3EC290; /* Warna kuning */
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+/* Section Putih */
+.white-section {
+    background-color: white;
+    color: black;
+    padding: 50px 0;
+}
+
