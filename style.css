@@ -182,3 +182,79 @@
     padding: 50px 0;
 }
 
+.container-google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 300px;
+    background-color: white; /* Warna kuning */
+    border-width: 1px;
+    border-style: solid;
+    border-color: #3A3A3A;
+    color: black;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.container-google-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.container-text input {
+    display: flex;
+    margin-top: 10px;
+    width: 300px;
+    height: 50px;
+    background-color: white; /* Warna kuning */
+    border-width: 1px;
+    border-style: solid;
+    border-color: #3A3A3A;
+    color: black;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.container-text-account {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    max-width: 300px;
+    background-color: #3EC290; /* Warna kuning */
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.container-text-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 300px;
+    color: #00A4EA;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.container-text-link-sigle {
+    color: #00A4EA;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.container-text-link-sigle:hover {
+    color: grey;
+}
+
+.container-text-link:hover {
+    color: grey;
+}
