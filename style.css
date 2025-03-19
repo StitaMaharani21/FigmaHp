@@ -21,6 +21,13 @@
     z-index: 1000;
 }
 
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .navbar a {
     color: white;
     text-decoration: none;
@@ -30,6 +37,13 @@
 
 .navbar a:hover {
     color: gray;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar li {
@@ -49,6 +63,64 @@
     text-transform: uppercase;
     border-radius: 2px;
 }
+
+.hamburger {
+    display: none; /* Awalnya sembunyikan */
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .navbar ul {
+        display: none; /* Sembunyikan menu */
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+        text-align: left;
+        padding: 10px 0;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Section Hitam */
 .black-section {
@@ -257,4 +329,75 @@
 
 .container-text-link:hover {
     color: grey;
+}
+
+.footer {
+    background-color: white;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    flex: 1; 
+    min-width: 150px; 
+}
+
+.footer-logo img {
+    width: 100px;
+    margin: 20px;
+    display: block;
+}
+
+.social-links {
+    list-style: none;
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+.social-links li {
+    display: flex; 
+    align-items: center; 
+}
+
+.social-links img {
+    width: 20px;
+    margin-right: 5px;
+    
+}
+
+.footer-column {
+    flex: 1; 
+    min-width: 150px; 
+    margin: 20px;
+    text-align: left; 
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+    text-align: left; /* Menyelaraskan teks ke kiri */
 }

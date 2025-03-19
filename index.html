@@ -8,15 +8,18 @@
 </head>
 <body>
     <nav class="navbar">
-        <img class="figma-logo" src="Assets/Figma logo.png" alt="logo">
-        <ul class="nav-list">
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Customers</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Sign In</a></li>
-            <li><a href="#" class="sign-up"> Sign Up</a></li>
-        </ul>
+        <div class="navbar-container">
+            <img class="figma-logo" src="Assets/Figma logo.png" alt="logo">
+            <div class="hamburger" onclick="toggleMenu()" aria-expanded="false" aria-label="Toggle navigation">☰</div>
+            <ul class="nav-list">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#" class="sign-up"> Sign Up</a></li>
+            </ul>
+        </div>
     </nav>
     <section class="black-section">
         <div class="hero">
@@ -96,5 +99,86 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="Assets/Figma logo footer.png" alt="logo">
+                <ul class="social-links">
+                    <li><img src="Assets/instagram.png" alt="Instagram"> Instagram</li>
+                    <li><img src="Assets/facebook.png" alt="Facebook"> Facebook</li>
+                    <li><img src="Assets/twitter2.png" alt="Twitter"> Twitter</li>
+                </ul>
+            </div>
+
+            <!-- Kolom 2: Use Cases -->
+            <div class="footer-column">
+                <h3>Use Cases</h3>
+                <ul>
+                    <li>UI Design</li>
+                    <li>UX Design</li>
+                    <li>Prototyping</li>
+                    <li>Graphic Design</li>
+                    <li>Wireframing</li>
+                    <li>Brainstorming</li>
+                </ul>
+            </div>
+
+            <!-- Kolom 3: Explore -->
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <ul>
+                    <li>Figma</li>
+                    <li>Customers</li>
+                    <li>Why I Love Figma</li>
+                    <li>Blog</li>
+                    <li>Pricing</li>
+                    <li>Features</li>
+                    <li>Contact</li>
+                    <li>Learn Design</li>
+                </ul>
+            </div>
+
+            <!-- Kolom 4: Resources -->
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li>Community Resources Hub</li>
+                    <li>Support</li>
+                    <li>Education</li>
+                    <li>Developers</li>
+                    <li>Downloads</li>
+                    <li>Releases</li>
+                    <li>Careers</li>
+                    <li>Legal</li>
+                    <li>Design Dictionary</li>
+                </ul>
+            </div>
+
+            <!-- Kolom 5: Compare -->
+            <div class="footer-column">
+                <h3>Compare</h3>
+                <ul>
+                    <li>Sketch</li>
+                    <li>Adobe XD</li>
+                    <li>Invision Studio</li>
+                    <li>Framer</li>
+                    <li>Design on Windows</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js">
+        function toggleMenu() {
+            const navList = document.querySelector('.nav-list');
+            const hamburger = document.querySelector('.hamburger');
+            
+            navList.classList.toggle('show'); // Toggle the 'show' class
+            const isExpanded = navList.classList.contains('show');
+            hamburger.setAttribute('aria-expanded', isExpanded); // Update aria-expanded attribute
+        }
+    </script>
 </body>
 </html>
